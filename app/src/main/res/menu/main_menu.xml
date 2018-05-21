@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:title="@string/save_menu"
+        android:id="@+id/menu_save"
+        android:icon="@drawable/ic_save_menu"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_new"
+        android:title="@string/new_menu"
+        android:icon="@drawable/ic_new_menu"
+        app:showAsAction="ifRoom"/>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_seccion_1"
+            android:icon="@drawable/ic_menu"
+            android:title="@string/menu_op1"/>
+        <item
+            android:id="@+id/menu_seccion_2"
+            android:icon="@drawable/ic_menu"
+            android:title="@string/menu_op2"/>
+        <item
+            android:id="@+id/menu_seccion_3"
+            android:icon="@drawable/ic_menu"
+            android:title="@string/menu_op3"/>
+        <item
+            android:icon="@drawable/ic_menu"
+            android:title="@string/menu_op3">
+            <menu>
+                <item
+                    android:id="@+id/menu_opcion_1"
+                    android:icon="@drawable/ic_menu"
+                    android:title="@string/opcion_1"/>
+                <item
+                    android:id="@+id/menu_opcion_2"
+                    android:icon="@drawable/ic_menu"
+                    android:title="@string/opcion_2"/>
+            </menu>
+        </item>
+    </group>
+</menu>
